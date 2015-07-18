@@ -1,0 +1,19 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+group = pGroup
+version = pVersion
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.jfree:jcommon:1.0.23'
+    testCompile 'junit:junit:4+'
+}
