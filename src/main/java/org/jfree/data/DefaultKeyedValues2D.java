@@ -109,6 +109,11 @@ public class DefaultKeyedValues2D implements KeyedValues2D, PublicCloneable,
         this.sortRowKeys = sortRowKeys;
     }
 
+	public void addColumn(Comparable key)
+	{
+		columnKeys.add(key);
+	}
+
     /**
      * Returns the row count.
      *

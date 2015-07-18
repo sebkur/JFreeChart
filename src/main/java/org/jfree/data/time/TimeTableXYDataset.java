@@ -120,6 +120,11 @@ public class TimeTableXYDataset extends AbstractIntervalXYDataset
         this(TimeZone.getDefault(), Locale.getDefault());
     }
 
+	public DefaultKeyedValues2D getValues()
+	{
+		return values;
+	}
+
     /**
      * Creates a new dataset with the given time zone.
      *
